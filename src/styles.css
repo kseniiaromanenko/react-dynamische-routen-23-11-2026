@@ -1,0 +1,165 @@
+@import 'tailwindcss';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+header {
+  padding: 20px 32px;
+  color: white;
+  background-color: #1f2937;
+}
+
+header h2 {
+  margin: 0 0 14px;
+}
+.user-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.user-item p {
+  margin: 6px 0 0;
+}
+
+.details-link {
+  flex-shrink: 0;
+  padding: 9px 14px;
+  color: white;
+  text-decoration: none;
+  background-color: #2563eb;
+  border-radius: 8px;
+}
+
+.details-link:hover {
+  background-color: #1d4ed8;
+}
+
+.user-detail {
+  padding: 24px;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+}
+
+.user-detail-label {
+  margin: 0;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.filter-navigation {
+  margin: 20px 0;
+}
+
+.filter-navigation a {
+  padding: 8px 14px;
+  color: #2563eb;
+  text-decoration: none;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 20px;
+}
+
+.filter-navigation a:hover,
+.filter-navigation a[data-status='active'] {
+  color: white;
+  background-color: #2563eb;
+}
+.user-information {
+  margin: 20px 0;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+}
+nav {
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  color: #dbeafe;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[data-status='active'] {
+  color: white;
+  text-decoration: underline;
+}
+
+main {
+  width: min(900px, calc(100% - 32px));
+  margin: 32px auto;
+  padding: 28px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 8%);
+}
+
+h1,
+h2 {
+  color: #111827;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 14px;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 16px;
+  color: white;
+  cursor: pointer;
+  background-color: #2563eb;
+  border: 0;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 18px 16px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  main {
+    margin: 16px auto;
+    padding: 20px;
+  }
+}
